@@ -750,82 +750,64 @@ Typed *surrender* to surrender and admited defeat`
 For example 1 for ecocash.`,
 
 //ecocash//
-  1:`${pushname} You Have Selected 𝗘𝗰𝗼𝗰𝗮𝘀𝗵
-  
-  Enter student firstname.`,
-  Darrell :`Enter student surname`,
-  Mucheri :` Enter class to continue`,
-4G:`To fees pay with ecocash enter you account number
+  1:`Hello ${pushname},  you have chosen 𝙀𝙘𝙤𝙘𝙖𝙨𝙝
+ 
+To pay withh ecocash enter you account number
 𝙚.𝙜 263719647301.`,
-263719647301:`${pushname}, 
-Enter the school amount in USD or ZiG
+263719647301:`${pushname}, Enter the amount in USD. 
+𝙀.𝙜 100`,
+100: `${pushname},  your 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation was successful. 
 
-*Fees Packages are as follows* :
-𝗢 𝗹𝗲𝘃𝗲𝗹 => 100
-𝗔 𝗹𝗲𝘃𝗲𝗹  => 150
+Your receipt code is :
 
-You can only pay 100 dollars and above 𝗼𝗻𝗹𝘆`,
-90 :` You have insufficient balance to pay fees please reenter amount`,
-100: `${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation successful. Please terminate session by sending 𝙚𝙭𝙞𝙩.`,
-1500: `${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+𝗜.𝗗 373762727𝗖50 Copy it
+
+Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
    exit: `Hey ${pushname}, all sessions have been terminated. 
 How can i help you?`,
 
 //onemoney//
-  2:`To pay withh Onemoney enter you account 
+  2:`To pay with Onemoney enter you account number
 𝙚.𝙜 263719647302.`,
-263719647302:`${pushname},Enter the amount in USD. 
+263719647302:`${pushname}, 
+Enter the amount in USD. 
 𝙀.𝙜 120`,
-120: `${pushname}, 𝙊𝙣𝙚𝙢𝙤𝙣𝙚𝙮 Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+120: `${pushname}, your 𝙊𝙣𝙚𝙢𝙤𝙣𝙚𝙮 Transcation successful. 
+Your receipt code is :
+   
+𝗜.𝗗 282777B40 copy it
+
+Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
 //onemoney//
 
+
+
 //bank//
-
-3:`To pay withh bank enter you bank card number.`,
- 1234567891234567:` Welcome, Darrell Mucheri to continue please enter your bank account password.`,
-2007:`Login Success,
-
- Enter the amount in USD you want to withdraw.
-𝙀.𝙜 100`,
+3:`To pay with bank please enter your card number`,
+1234567891234567:`Welcome Darrell M, please enter your password to with draw cash`,
+2007:`${pushname},Enter the amount in USD. 
+𝙀.𝙜 130`,
    130: `${pushname}, Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
-   //bNk//
+   //baNk//
    
-   refresh: `System will reboot in 5 seconds...`,
-   About:`𝗘𝗰𝗼𝗕𝗼𝘁 whatsapp bot was developed by Darrell Mucheri & Crejinai Makanyisa.
- The two are currently in their O level finals at St Marys.
- Its aim is to make fees payment available 24/7 everywhere.
- 
- For more info visit here : mucheri-inc.vercel.app`,
- portal:`Welcome to results portal here you can view students results easily.To continue select one of the options:
- 
- 1.0 => O Level
- 1.1 => A level`,
- 1.0:`Enter student name`,
- crejinai:`Enter surname`,
- Makanyisa:`Enter D.O.B`,
- 22/10/2007:`Your 2024 results are as follows:
- Mathematics A
- English            A
- Geo                 A
- Accounts        A
- Chemistry            A
- Computer Science A
- Physics        A
- Biology       A
- Shona         A`,
- check:`Enter students name`,
- takudzwa:`Enter surname`,
- moyo:`Enter class`,
- 4E:`Term 1 => paid 100
- Term 2 => paid 65
- Term 3 => null`,
- 
- 
-   hi: `Greeting to you type !𝗺𝗲𝗻𝘂 to see options available`,
-  hello: `Hello ${BotName}.. How can I help you?`,
+   check:`Enter student name`,
+ crejinai:`Enter student surname`,
+   makanyisa:`Enter student class`,
+  4G:`Crejinai has not paid yet!`,
+   portal:`Enter name of candidate`,
+   darrell:`Enter candidate surname`,
+   mucheri:`Enter student gender`,
+   male:`Maths A\n Physics A\n Chemistry \nComputer Science`,
+   female:`Candidate with supplied details not found`,
+   about:`𝗘𝗰𝗼𝗕𝗼𝘁 is a whatsapp bot developed by Darrell Mucheri & Crejinai Makanyisa to pay school fees online.It uses advanced algorithms to come to a conclusion.
+
+For more info visit here: mucheri-inc.vercel.app or
+wa.me/263719647303.`,
+   
+  hello: `Hello ${BotName}. My current prefix is "${prefix}". How can I help you?`,
   Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
   mrfrank1: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrell1: `I am busy,will reply you when I f33l like (¬_¬)ﾉ(...`,
+  darrell1: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
@@ -6433,7 +6415,7 @@ _Click the button below to download_`
           const response = await axios.get(pat.url, { responseType: 'arraybuffer' })
           const buffer = Buffer.from(response.data, "utf-8")
           var fetchedgif = await GIFBufferToVideoBuffer(buffer)
-          Subzero.sendMessage(m.chat, { video: fetchedgif, gifPlayback: true, mentions: ment, caption: musers }, { quoted: m })
+          Subzero.sendMessage(m.chat, { video: fetchedgif, gifPlayback: true, mentions: ment, captio: musers }, { quoted: m })
         } catch (error) {
           console.log(error);
         }
@@ -6897,30 +6879,31 @@ _Click the button below to download_`
         try {
           await Subzero.sendMessage(from, { react: { text: "✔️", key: m.key } });
          const helpMenuText = `
-*${nowtime}* ,  ${pushname},
- I am 𝗘𝗰𝗼𝗕𝗼𝘁, your one in all online fees paying bot.
+*${nowtime}* 😊,  ${pushname},
+ I am Ecobot🌪️
+ Your one in all online fees paying bot✨
          
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣ *Online Fees Payment Bot
+┃╏⟣ *Online Fees Payment Bot*
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮ *${nowtime}* 🕕
-┃╏ ➮ *Today is ${kaidate}* 🗓️
-┃╏ ➮ *Bot running since ${runtime(process.uptime())}* 🕓
+┃╏ ➮Current Time is   ${nowtime}*
+┃╏ ➮ Todays date is ${kaidate}*
+┃╏ ➮ Alive since  ${runtime(process.uptime())}*
 ┃╏        
 ┃╰─────────────߷
-┃ *Digitalize Your World *
-┃         𝗘𝗰𝗼𝗕𝗼𝘁
+┃
+┃ *Digitalize Your World With EcoBot *
 ╰───────────────߷
  
  ⟝⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟞
  
 ╭──────────────⟞
-┆     *EcoBots Menu*
+┆  *EcoBots  Menu* 
 ╰──────────────⟞ 
-╭───────────────⧉
+╭─────────────── ⧉
 ┃ 
 ┃ ➮  1. Pay fees
 ┃ ➮  2. Check  students balance
@@ -6929,7 +6912,7 @@ _Click the button below to download_`
 ┃ ➮  5. Exit
 ┃ 
 ┃  
-╰──────────────⧉`;
+╰─────────────── ⧉`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
@@ -6959,7 +6942,7 @@ _Click the button below to download_`
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"pay","id":'english'}`
+                        "buttonParamsJson": `{"display_text":"pay","id":'pay'}`
                       },
                      
                      {
@@ -6989,7 +6972,7 @@ _Click the button below to download_`
                       
 		         {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'About'}`
+                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
                       },
                     ]
                   })
@@ -7071,131 +7054,4 @@ _Click the button below to download_`
       // case 'weather':{
       //   if (!text) return reply('Give me Location...')
       //               let wdata = await axios.get(
-      //                   `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en`
-      //               );
-      //               let textw = ""
-      //               textw += `*🗺️Weather of  ${text}*\n\n`
-      //               textw += `*Weather:-* ${wdata.data.weather[0].main}\n`
-      //               textw += `*Description:-* ${wdata.data.weather[0].description}\n`
-      //               textw += `*Avg Temp:-* ${wdata.data.main.temp}\n`
-      //               textw += `*Feels Like:-* ${wdata.data.main.feels_like}\n`
-      //               textw += `*Pressure:-* ${wdata.data.main.pressure}\n`
-      //               textw += `*Humidity:-* ${wdata.data.main.humidity}\n`
-      //               textw += `*Humidity:-* ${wdata.data.wind.speed}\n`
-      //               textw += `*Latitude:-* ${wdata.data.coord.lat}\n`
-      //               textw += `*Longitude:-* ${wdata.data.coord.lon}\n`
-      //               textw += `*Country:-* ${wdata.data.sys.country}\n`
-
-      //             Subzero.sendMessage(
-      //                   m.chat, {
-      //                       text: textw,
-      //                   }, {
-      //                       quoted: m,
-      //                   }
-      //              )
-      //              }
-      //              break;
-
-
-
-      // //  "parse-ms": "^1.1.0",
-
-
-      //-----------------------------------------------------------------------------------------------------------------------------------//
-      ///funmenu
-
-      case 'stupidcheck': case 'uncleancheck':
-      case 'hotcheck': case 'smartcheck':
-      case 'greatcheck':
-      case 'evilcheck': case 'dogcheck':
-      case 'coolcheck':
-      case 'waifucheck':
-        cantik = body.slice(1)
-        const okebnh1 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
-        const Subzerokak = okebnh1[Math.floor(Math.random() * okebnh1.length)]
-        Subzero.sendMessage(m.chat, { text: Subzerokak }, { quoted: m })
-        break;
-
-
-
-      //-----------------------------------------------------------------------------------------------------------------------------------//
-
-
-
-      default:
-
-        if (isCmd) {
-          if (isBan) return reply(mess.banned);
-          if (isBanChat) return reply(mess.bangc);
-          Subzero.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
-
-        }
-
-
-        if (budy.startsWith('=>')) {
-          if (!isCreator) return reply(mess.botowner)
-          function Return(sul) {
-            sat = JSON.stringify(sul, null, 2)
-            bang = util.format(sat)
-            if (sat == undefined) {
-              bang = util.format(sul)
-            }
-            return reply(bang)
-          }
-          try {
-            reply(util.format(eval(`(async () => { ${budy.slice(3)} })()`)))
-          } catch (e) {
-            Subzero.sendMessage(from, { image: ErrorPic, caption: String(e) }, { quoted: m })
-          }
-        }
-        if (budy.startsWith('>')) {
-          if (!isCreator) return reply(mess.botowner)
-          try {
-            let evaled = await eval(budy.slice(2))
-            if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
-            await reply(evaled)
-          } catch (err) {
-            await Subzero.sendMessage(from, { image: ErrorPic, caption: String(err) }, { quoted: m })
-          }
-        }
-
-
-        if (budy.startsWith('$')) {
-          if (!isCreator) return reply(mess.botowner)
-          exec(budy.slice(2), (err, stdout) => {
-            if (err) return Subzero.sendMessage(from, { image: ErrorPic, caption: String(err) }, { quoted: m })
-            if (stdout) return replyH(stdout)
-          })
-        }
-
-
-        if (isCmd && budy.toLowerCase() != undefined) {
-          if (m.chat.endsWith('broadcast')) return
-          if (m.isBaileys) return
-          let msgs = global.db.database
-          if (!(budy.toLowerCase() in msgs)) return
-          Subzero.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
-        }
-    }
-  } catch (err) {
-    Subzero.sendMessage(`${ownertag}@s.whatsapp.net`, util.format(err), { quoted: m })
-    console.log(err)
-    let e = String(err)
-    if (e.includes("not-authorized")) return
-    if (e.includes("already-exists")) return
-    if (e.includes("rate-overlimit")) return
-    if (e.includes("Connection Closed")) return
-    if (e.includes("Timed Out")) return
-    if (e.includes("Value not found")) return
-    if (e.includes("Socket connection timeout")) return
-  }
-}
-
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-  fs.unwatchFile(file)
-  console.log(chalk.redBright(`Update ${__filename}`))
-  delete require.cache[file]
-  require(file)
-})
+      //                   `https://api.openwe
