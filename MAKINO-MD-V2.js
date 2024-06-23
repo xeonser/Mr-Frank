@@ -6873,71 +6873,48 @@ _Click the button below to download_`
 
 
       case 'help':
-      case 'h':
+      case 'pay':
       case 'menu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
         try {
           await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
-         const helpMenuText = `
-Hi😊,  ${pushname}*
+         const helpMenuText = `*${nowtime}* 😊,  ${pushname},
+ I am Ecobot🌪️
+ Your one in all online fees paying bot✨
          
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣📚 *𝙱𝙾𝙾𝙺-𝙱𝙾𝚃* 📚 ߷
+┃╏⟣ *Online Fees Payment Bot*
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮ *𝚃𝙸𝙼𝙴    : ${nowtime}*
-┃╏ ➮ *𝚃𝙾𝙳𝙰𝚈   : ${kaidate}*
-┃╏ ➮ *𝙾𝚆𝙽𝙴𝚁   : ${global.OwnerName}*
-┃╏ ➮ *𝙱𝙾𝙾𝙺𝚂   : 35*
-┃╏ ➮ *𝙿𝚁𝙴𝙵𝙸𝚇  : ${prefix}*
-┃╏ ➮ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴 : ${runtime(process.uptime())}*
+┃╏ ➮Current Time is   ${nowtime}*
+┃╏ ➮ Todays date is ${kaidate}*
+┃╏ ➮ Alive since  ${runtime(process.uptime())}*
 ┃╏        
 ┃╰─────────────߷
 ┃
-┃  *©️ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺*
+┃ *Digitalize Your World With EcoBot *
 ╰───────────────߷
  
  ⟝⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟞
  
 ╭──────────────⟞
-┆〘 *TextBooks Available* 〙
+┆  *EcoBots  Menu* 
 ╰──────────────⟞ 
 ╭─────────────── ⧉
-┃ ➮ 
-┃ ➮ 
-┃ ➮
-┃ ➮ 
-┃ ➮ 
-┃ ➮ 
-┃ ➮ 
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮    
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮ 
-┃ ➮  
-┃ ➮  
-┃
-┃ © 𝙱𝙾𝚃 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺
-┃       𝚂𝚄𝙱𝚉𝙴𝚁𝙾 𝙸𝙽𝙲.
-╰─────────────── ⧉`;
+┃ 
+┃ ➮  1. Pay fees
+┃ ➮  2. Check  students balance
+┃ ➮  3. Results Portal
+┃ ➮  4. Refresh
+┃ ➮  5. Exit
+┃ 
+┃  
+╰─────────────── ⧉.
+`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
@@ -6951,7 +6928,7 @@ Hi😊,  ${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "            © 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺 "
+                    text: "            ©EcoBot Fees Bot  💳"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
@@ -6963,61 +6940,47 @@ Hi😊,  ${pushname}*
                   }),
                   nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
                     buttons: [
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
-                      },
+               
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"ENGLISH 🤓","id":'english'}`
+                        "buttonParamsJson": `{"display_text":"pay ","id":'english'}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"GEOGRAPHY 🏜","id":'geo'}`
+                        "buttonParamsJson": `{"display_text":"check ","id":'geo'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"ACCOUNTS 📖","id":'acc'}`
+                        "buttonParamsJson": `{"display_text":"portal","id":'acc'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"SHONA 🐦","id":'shona'}`
+                        "buttonParamsJson": `{"display_text":"refresh","id":'shona'}`
                       },
+
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"BOILOGY ☃️","id":'${prefix}bio'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"CHEMISTRY 🗻","id":'${prefix}chem'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PHYSICS 🌋","id":'physics'}`
+                        "buttonParamsJson": `{"display_text":"exit","id":'physics'}`
                       },
                       
 		              {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"HISTORY 📑","id":'history'}`
+                        "buttonParamsJson": `{"display_text":"events","id":'history'}`
                       },
                       
 			
-               {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PRACTICALS 🐾","id":'pracs'}`
-                      },
+    
                       
 
-		         {
-                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MORE BOOKS 📚","id":'books'}`
+		         
+                             {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"about","id":'owner'}`
                       },
                     ]
                   })
