@@ -740,10 +740,54 @@ Typed *surrender* to surrender and admited defeat`
     }*/
    const responses = {
    
-  hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
+   pay: `Hello *${pushname},* Choose one of the following options to pay.
+
+1. Ecocash
+2. Onemoney
+3. Bank
+ 
+𝙉.𝘽  To choose an option just reply withh number.
+𝙀.𝙜 1 for ecocash.`,
+
+//ecocash//
+  1:`${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝
+ 
+To pay withh ecocash enter you account 
+𝙚.𝙜 263719647301.`,
+263719647301:`${pushname},Enter the amount in USD. 
+𝙀.𝙜 100`,
+100: `${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   exit: `Hey ${pushname}, all sessions have been terminated. 
+How can i help you?`,
+
+//onemoney//
+  2:`To pay withh onemoney enter you account 
+𝙚.𝙜 263719647302.`,
+263719647302:`${pushname},Enter the amount in USD. 
+𝙀.𝙜 120`,
+120: `${pushname}, 𝙊𝙣𝙚𝙢𝙤𝙣𝙚𝙮 Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+//onemoney//
+
+//bank//
+
+3:`To pay withh bank enter you bank card number.`,
+ 1234567891234567:` Hello Darrell Mucheri please enter your account password.`,
+2007:`Login Success ${pushname}, Enter the amount in USD you want to withdraw.
+𝙀.𝙜 130`,
+   130: `${pushname}, Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   //bNk//
+   
+   refresh: `System will reboot in 5 seconds...`,
+   About:`𝗘𝗰𝗼𝗕𝗼𝘁 whatsapp bot was developed by Darrell Mucheri & Crejinai Makanyisa.
+ The two are currently in their Olevel finals at St Marys.
+ Its aim is to make fees payment available 24/7 everywhere.
+ 
+ For more info visit here : mucheri-inc.vercel.app`,
+   
+  hello: `Hello ${BotName}. My current prefix is "${prefix}". How can I help you?`,
   Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
-  mrfrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
+  mrfrank1: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
+  darrell1: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
@@ -6813,64 +6857,40 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
 
         try {
-          await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
+          await Subzero.sendMessage(from, { react: { text: "✔️", key: m.key } });
          const helpMenuText = `
-Hi😊,  ${pushname}*
+*${kaidate}* 😊,  ${pushname},
+ I am Ecobot your one in all online fees paying bot.
          
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣📚 *𝙱𝙾𝙾𝙺-𝙱𝙾𝚃* 📚 ߷
+┃╏⟣📚 *Online Fees Payment Bot 📚 
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
 ┃╏ ➮ *𝚃𝙸𝙼𝙴    : ${nowtime}*
 ┃╏ ➮ *𝚃𝙾𝙳𝙰𝚈   : ${kaidate}*
-┃╏ ➮ *𝙾𝚆𝙽𝙴𝚁   : ${global.OwnerName}*
-┃╏ ➮ *𝙱𝙾𝙾𝙺𝚂   : 35*
-┃╏ ➮ *𝙿𝚁𝙴𝙵𝙸𝚇  : ${prefix}*
 ┃╏ ➮ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴 : ${runtime(process.uptime())}*
 ┃╏        
 ┃╰─────────────߷
 ┃
-┃  *©️ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺*
+┃  *Digitalize Your Fees Payment With EcoBot *
 ╰───────────────߷
  
  ⟝⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟞
  
 ╭──────────────⟞
-┆〘 *TextBooks Available* 〙
+┆〘 *EcoBot's Menu* 〙
 ╰──────────────⟞ 
 ╭─────────────── ⧉
-┃ ➮ 
-┃ ➮ 
-┃ ➮
-┃ ➮ 
-┃ ➮ 
-┃ ➮ 
-┃ ➮ 
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮    
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮ 
-┃ ➮  
-┃ ➮  
-┃
-┃ © 𝙱𝙾𝚃 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺
-┃       𝚂𝚄𝙱𝚉𝙴𝚁𝙾 𝙸𝙽𝙲.
+┃ 
+┃ ➮  1. Pay fees
+┃ ➮  2. Check  students balance
+┃ ➮  3. Results Portal
+┃ ➮  4. Refresh
+┃ ➮  5. Exit
+┃ 
+┃  
 ╰─────────────── ⧉`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
@@ -6885,73 +6905,53 @@ Hi😊,  ${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "            © 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺 "
+                    text: "            © EcoBot Fees Bot  💳"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
 
 
-                    title: "                      Textbooks list",
+                    title: "                      Functions list",
                     subtitle: "Browse through the available commands",
                     hasMediaAttachment: false
                   }),
                   nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
                     buttons: [
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
-                      },
+                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"ENGLISH 🤓","id":'english'}`
+                        "buttonParamsJson": `{"display_text":"pay","id":'english'}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"GEOGRAPHY 🏜","id":'geo'}`
+                        "buttonParamsJson": `{"display_text":"check ","id":'geo'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"ACCOUNTS 📖","id":'acc'}`
+                        "buttonParamsJson": `{"display_text":"portal ","id":'acc'}`
                       },
+                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"SHONA 🐦","id":'shona'}`
+                        "buttonParamsJson": `{"display_text":" refresh","id":'shona'}`
                       },
+                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"BOILOGY ☃️","id":'${prefix}bio'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"CHEMISTRY 🗻","id":'${prefix}chem'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PHYSICS 🌋","id":'physics'}`
-                      },
-                      
-		              {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"HISTORY 📑","id":'history'}`
-                      },
-                      
-			
-               {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PRACTICALS 🐾","id":'pracs'}`
+                        "buttonParamsJson": `{"display_text":"exit","id":'${prefix}bio'}`
                       },
                       
 
+                      
+                      
 		         {
-                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MORE BOOKS 📚","id":'books'}`
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"About","id":'${prefix}owner'}`
                       },
                     ]
                   })
