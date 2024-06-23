@@ -746,22 +746,33 @@ Typed *surrender* to surrender and admited defeat`
 2. Onemoney
 3. Bank
  
-𝙉.𝘽  To choose an option just reply withh number.
-𝙀.𝙜 1 for ecocash.`,
+𝙉.𝘽  To choose an option just reply with number.
+For example 1 for ecocash.`,
 
 //ecocash//
-  1:`${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝
- 
-To pay withh ecocash enter you account 
+  1:`${pushname} You Have Selected 𝗘𝗰𝗼𝗰𝗮𝘀𝗵
+  
+  Enter student firstname.`,
+  Darrell :`Enter student surname`,
+  Mucheri :` Enter class to continue`,
+4G:`To fees pay with ecocash enter you account number
 𝙚.𝙜 263719647301.`,
-263719647301:`${pushname},Enter the amount in USD. 
-𝙀.𝙜 100`,
-100: `${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+263719647301:`${pushname}, 
+Enter the school amount in USD or ZiG
+
+*Fees Packages are as follows* :
+𝗢 𝗹𝗲𝘃𝗲𝗹 => 100
+𝗔 𝗹𝗲𝘃𝗲𝗹  => 150
+
+You can only pay 100 dollars and above 𝗼𝗻𝗹𝘆`,
+90 :` You have insufficient balance to pay fees please reenter amount`,
+100: `${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation successful. Please terminate session by sending 𝙚𝙭𝙞𝙩.`,
+1500: `${pushname}, 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
    exit: `Hey ${pushname}, all sessions have been terminated. 
 How can i help you?`,
 
 //onemoney//
-  2:`To pay withh onemoney enter you account 
+  2:`To pay withh Onemoney enter you account 
 𝙚.𝙜 263719647302.`,
 263719647302:`${pushname},Enter the amount in USD. 
 𝙀.𝙜 120`,
@@ -771,23 +782,50 @@ How can i help you?`,
 //bank//
 
 3:`To pay withh bank enter you bank card number.`,
- 1234567891234567:` Hello Darrell Mucheri please enter your account password.`,
-2007:`Login Success ${pushname}, Enter the amount in USD you want to withdraw.
-𝙀.𝙜 130`,
+ 1234567891234567:` Welcome, Darrell Mucheri to continue please enter your bank account password.`,
+2007:`Login Success,
+
+ Enter the amount in USD you want to withdraw.
+𝙀.𝙜 100`,
    130: `${pushname}, Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
    //bNk//
    
    refresh: `System will reboot in 5 seconds...`,
    About:`𝗘𝗰𝗼𝗕𝗼𝘁 whatsapp bot was developed by Darrell Mucheri & Crejinai Makanyisa.
- The two are currently in their Olevel finals at St Marys.
+ The two are currently in their O level finals at St Marys.
  Its aim is to make fees payment available 24/7 everywhere.
  
  For more info visit here : mucheri-inc.vercel.app`,
-   
-  hello: `Hello ${BotName}. My current prefix is "${prefix}". How can I help you?`,
+ portal:`Welcome to results portal here you can view students results easily.To continue select one of the options:
+ 
+ 1.0 => O Level
+ 1.1 => A level`,
+ 1.0:`Enter student name`,
+ crejinai:`Enter surname`,
+ Makanyisa:`Enter D.O.B`,
+ 22/10/2007:`Your 2024 results are as follows:
+ Mathematics A
+ English            A
+ Geo                 A
+ Accounts        A
+ Chemistry            A
+ Computer Science A
+ Physics        A
+ Biology       A
+ Shona         A`,
+ check:`Enter students name`,
+ takudzwa:`Enter surname`,
+ moyo:`Enter class`,
+ 4E:`Term 1 => paid 100
+ Term 2 => paid 65
+ Term 3 => null`,
+ 
+ 
+   hi: `Greeting to you type !𝗺𝗲𝗻𝘂 to see options available`,
+  hello: `Hello ${BotName}.. How can I help you?`,
   Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
   mrfrank1: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrell1: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
+  darrell1: `I am busy,will reply you when I f33l like (¬_¬)ﾉ(...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
@@ -6859,30 +6897,30 @@ _Click the button below to download_`
         try {
           await Subzero.sendMessage(from, { react: { text: "✔️", key: m.key } });
          const helpMenuText = `
-*${kaidate}* 😊,  ${pushname},
- I am Ecobot your one in all online fees paying bot.
+*${nowtime}* ,  ${pushname},
+ I am 𝗘𝗰𝗼𝗕𝗼𝘁, your one in all online fees paying bot.
          
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣📚 *Online Fees Payment Bot 📚 
+┃╏⟣ *Online Fees Payment Bot
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮ *𝚃𝙸𝙼𝙴    : ${nowtime}*
-┃╏ ➮ *𝚃𝙾𝙳𝙰𝚈   : ${kaidate}*
-┃╏ ➮ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴 : ${runtime(process.uptime())}*
+┃╏ ➮ *${nowtime}* 🕕
+┃╏ ➮ *Today is ${kaidate}* 🗓️
+┃╏ ➮ *Bot running since ${runtime(process.uptime())}* 🕓
 ┃╏        
 ┃╰─────────────߷
-┃
-┃  *Digitalize Your Fees Payment With EcoBot *
+┃ *Digitalize Your World *
+┃         𝗘𝗰𝗼𝗕𝗼𝘁
 ╰───────────────߷
  
  ⟝⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟞
  
 ╭──────────────⟞
-┆〘 *EcoBot's Menu* 〙
+┆     *EcoBots Menu*
 ╰──────────────⟞ 
-╭─────────────── ⧉
+╭───────────────⧉
 ┃ 
 ┃ ➮  1. Pay fees
 ┃ ➮  2. Check  students balance
@@ -6891,7 +6929,7 @@ _Click the button below to download_`
 ┃ ➮  5. Exit
 ┃ 
 ┃  
-╰─────────────── ⧉`;
+╰──────────────⧉`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
@@ -6926,24 +6964,24 @@ _Click the button below to download_`
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"check ","id":'geo'}`
+                        "buttonParamsJson": `{"display_text":"check ","id":'check'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"portal ","id":'acc'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":" refresh","id":'shona'}`
+                        "buttonParamsJson": `{"display_text":"portal ","id":'portal'}`
                       },
                       
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"exit","id":'${prefix}bio'}`
+                        "buttonParamsJson": `{"display_text":" refresh","id":'refresh'}`
+                      },
+                      
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"exit","id":'exit'}`
                       },
                       
 
@@ -6951,7 +6989,7 @@ _Click the button below to download_`
                       
 		         {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"About","id":'About'}`
                       },
                     ]
                   })
