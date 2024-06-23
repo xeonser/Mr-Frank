@@ -739,12 +739,77 @@ Typed *surrender* to surrender and admited defeat`
       reply(responses[smallinput]);
     }*/
    const responses = {
+   	
    
    
-  hello: `Hello ${BotName}. My current prefix is "${prefix}". How can I help you?`,
+   pay: `Hello *${pushname},* Choose one of the following options to pay.
+
+1. Ecocash
+2. Onemoney
+3. Bank
+ 
+𝙉.𝘽  To choose an option just reply with number.
+For example 1 for ecocash.`,
+
+//ecocash//
+  1:`Hello ${pushname},  you have chosen 𝙀𝙘𝙤𝙘𝙖𝙨𝙝
+ 
+To pay withh ecocash enter you account number
+𝙚.𝙜 263719647301.`,
+263719647301:`${pushname}, Enter the amount in USD. 
+𝙀.𝙜 100`,
+100: `${pushname},  your 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation was successful. 
+
+Your receipt code is :
+
+𝗜.𝗗 373762727𝗖50 Copy it
+
+Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   exit: `Hey ${pushname}, all sessions have been terminated. 
+How can i help you?`,
+
+//onemoney//
+  2:`To pay with Onemoney enter you account number
+𝙚.𝙜 263719647302.`,
+263719647302:`${pushname}, 
+Enter the amount in USD. 
+𝙀.𝙜 120`,
+120: `${pushname}, your 𝙊𝙣𝙚𝙢𝙤𝙣𝙚𝙮 Transcation successful. 
+Your receipt code is :
+   
+𝗜.𝗗 282777B40   copy it
+
+Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+//onemoney//
+
+
+
+//bank//
+3:`To pay with bank please enter your card number`,
+1234567891234567:`Welcome Darrell M, please enter your password to with draw cash`,
+2007:`${pushname},Enter the amount in USD. 
+𝙀.𝙜 130`,
+   130: `${pushname}, Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   //baNk//
+   
+   check:`Enter student name`,
+ crejinai:`Enter student surname`,
+   makanyisa:`Enter student class`,
+  41:`Crejinai has not paid yet!`,
+   portal:`Enter name of candidate`,
+   darrell:`Enter candidate surname`,
+   mucheri:`Enter student gender`,
+   male:`Maths A\n Physics A\n Chemistry \nComputer Science`,
+   female:`Candidate with supplied details not found`,
+   about:`𝗘𝗰𝗼𝗕𝗼𝘁 is a whatsapp bot developed by Darrell Mucheri & Crejinai Makanyisa to pay school fees online.It uses advanced algorithms to come to a conclusion.
+
+For more info visit here: mucheri-inc.vercel.app or
+wa.me/263719647303.`,
+   
+  hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
   Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
-  mrfrank1: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrell1: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
+  mrfrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
+  darrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
@@ -6352,7 +6417,7 @@ _Click the button below to download_`
           const response = await axios.get(pat.url, { responseType: 'arraybuffer' })
           const buffer = Buffer.from(response.data, "utf-8")
           var fetchedgif = await GIFBufferToVideoBuffer(buffer)
-          Subzero.sendMessage(m.chat, { video: fetchedgif, gifPlayback: true, mentions: ment, captio: musers }, { quoted: m })
+          Subzero.sendMessage(m.chat, { video: fetchedgif, gifPlayback: true, mentions: ment, caption: musers }, { quoted: m })
         } catch (error) {
           console.log(error);
         }
@@ -6814,41 +6879,64 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
 
         try {
-          await Subzero.sendMessage(from, { react: { text: "✔️", key: m.key } });
+          await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
          const helpMenuText = `
-*${nowtime}* 😊,  ${pushname},
- I am Ecobot🌪️
- Your one in all online fees paying bot✨
+Hi😊,  ${pushname}*
          
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣ *Online Fees Payment Bot*
+┃╏⟣📚 *𝙱𝙾𝙾𝙺-𝙱𝙾𝚃* 📚 ߷
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮Current Time is   ${nowtime}*
-┃╏ ➮ Todays date is ${kaidate}*
-┃╏ ➮ Alive since  ${runtime(process.uptime())}*
+┃╏ ➮ *𝚃𝙸𝙼𝙴    : ${nowtime}*
+┃╏ ➮ *𝚃𝙾𝙳𝙰𝚈   : ${kaidate}*
+┃╏ ➮ *𝙾𝚆𝙽𝙴𝚁   : ${global.OwnerName}*
+┃╏ ➮ *𝙱𝙾𝙾𝙺𝚂   : 35*
+┃╏ ➮ *𝙿𝚁𝙴𝙵𝙸𝚇  : ${prefix}*
+┃╏ ➮ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴 : ${runtime(process.uptime())}*
 ┃╏        
 ┃╰─────────────߷
 ┃
-┃ *Digitalize Your World With EcoBot *
+┃  *©️ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺*
 ╰───────────────߷
  
  ⟝⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟞
  
 ╭──────────────⟞
-┆  *EcoBots  Menu* 
+┆〘 *TextBooks Available* 〙
 ╰──────────────⟞ 
 ╭─────────────── ⧉
-┃ 
-┃ ➮  1. Pay fees
-┃ ➮  2. Check  students balance
-┃ ➮  3. Results Portal
-┃ ➮  4. Refresh
-┃ ➮  5. Exit
-┃ 
-┃  
+┃ ➮ 
+┃ ➮ 
+┃ ➮
+┃ ➮ 
+┃ ➮ 
+┃ ➮ 
+┃ ➮ 
+┃ ➮  
+┃ ➮  
+┃ ➮   
+┃ ➮  
+┃ ➮  
+┃ ➮    
+┃ ➮  
+┃ ➮  
+┃ ➮  
+┃ ➮  
+┃ ➮   
+┃ ➮  
+┃ ➮  
+┃ ➮   
+┃ ➮  
+┃ ➮  
+┃ ➮  
+┃ ➮ 
+┃ ➮  
+┃ ➮  
+┃
+┃ © 𝙱𝙾𝚃 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺
+┃       𝚂𝚄𝙱𝚉𝙴𝚁𝙾 𝙸𝙽𝙲.
 ╰─────────────── ⧉`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
@@ -6863,53 +6951,73 @@ _Click the button below to download_`
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "            © EcoBot Fees Bot  💳"
+                    text: "            © 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺 "
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
 
 
-                    title: "                      Functions list",
+                    title: "                      Textbooks list",
                     subtitle: "Browse through the available commands",
                     hasMediaAttachment: false
                   }),
                   nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
                     buttons: [
-                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                      },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"pay","id":'pay'}`
+                        "buttonParamsJson": `{"display_text":"ENGLISH 🤓","id":'english'}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"check ","id":'check'}`
+                        "buttonParamsJson": `{"display_text":"GEOGRAPHY 🏜","id":'geo'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"portal ","id":'portal'}`
+                        "buttonParamsJson": `{"display_text":"ACCOUNTS 📖","id":'acc'}`
                       },
-                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":" refresh","id":'refresh'}`
+                        "buttonParamsJson": `{"display_text":"SHONA 🐦","id":'shona'}`
                       },
-                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"exit","id":'exit'}`
+                        "buttonParamsJson": `{"display_text":"BOILOGY ☃️","id":'${prefix}bio'}`
+                      },
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"CHEMISTRY 🗻","id":'${prefix}chem'}`
+                      },
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"PHYSICS 🌋","id":'physics'}`
+                      },
+                      
+		              {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"HISTORY 📑","id":'history'}`
+                      },
+                      
+			
+               {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"PRACTICALS 🐾","id":'pracs'}`
                       },
                       
 
-                      
-                      
 		         {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
+                         "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"MORE BOOKS 📚","id":'books'}`
                       },
                     ]
                   })
@@ -6991,4 +7099,131 @@ _Click the button below to download_`
       // case 'weather':{
       //   if (!text) return reply('Give me Location...')
       //               let wdata = await axios.get(
-      //                   `https://api.openwe
+      //                   `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en`
+      //               );
+      //               let textw = ""
+      //               textw += `*🗺️Weather of  ${text}*\n\n`
+      //               textw += `*Weather:-* ${wdata.data.weather[0].main}\n`
+      //               textw += `*Description:-* ${wdata.data.weather[0].description}\n`
+      //               textw += `*Avg Temp:-* ${wdata.data.main.temp}\n`
+      //               textw += `*Feels Like:-* ${wdata.data.main.feels_like}\n`
+      //               textw += `*Pressure:-* ${wdata.data.main.pressure}\n`
+      //               textw += `*Humidity:-* ${wdata.data.main.humidity}\n`
+      //               textw += `*Humidity:-* ${wdata.data.wind.speed}\n`
+      //               textw += `*Latitude:-* ${wdata.data.coord.lat}\n`
+      //               textw += `*Longitude:-* ${wdata.data.coord.lon}\n`
+      //               textw += `*Country:-* ${wdata.data.sys.country}\n`
+
+      //             Subzero.sendMessage(
+      //                   m.chat, {
+      //                       text: textw,
+      //                   }, {
+      //                       quoted: m,
+      //                   }
+      //              )
+      //              }
+      //              break;
+
+
+
+      // //  "parse-ms": "^1.1.0",
+
+
+      //-----------------------------------------------------------------------------------------------------------------------------------//
+      ///funmenu
+
+      case 'stupidcheck': case 'uncleancheck':
+      case 'hotcheck': case 'smartcheck':
+      case 'greatcheck':
+      case 'evilcheck': case 'dogcheck':
+      case 'coolcheck':
+      case 'waifucheck':
+        cantik = body.slice(1)
+        const okebnh1 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
+        const Subzerokak = okebnh1[Math.floor(Math.random() * okebnh1.length)]
+        Subzero.sendMessage(m.chat, { text: Subzerokak }, { quoted: m })
+        break;
+
+
+
+      //-----------------------------------------------------------------------------------------------------------------------------------//
+
+
+
+      default:
+
+        if (isCmd) {
+          if (isBan) return reply(mess.banned);
+          if (isBanChat) return reply(mess.bangc);
+          Subzero.sendMessage(from, { react: { text: "❌", key: m.key } })
+          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
+
+        }
+
+
+        if (budy.startsWith('=>')) {
+          if (!isCreator) return reply(mess.botowner)
+          function Return(sul) {
+            sat = JSON.stringify(sul, null, 2)
+            bang = util.format(sat)
+            if (sat == undefined) {
+              bang = util.format(sul)
+            }
+            return reply(bang)
+          }
+          try {
+            reply(util.format(eval(`(async () => { ${budy.slice(3)} })()`)))
+          } catch (e) {
+            Subzero.sendMessage(from, { image: ErrorPic, caption: String(e) }, { quoted: m })
+          }
+        }
+        if (budy.startsWith('>')) {
+          if (!isCreator) return reply(mess.botowner)
+          try {
+            let evaled = await eval(budy.slice(2))
+            if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
+            await reply(evaled)
+          } catch (err) {
+            await Subzero.sendMessage(from, { image: ErrorPic, caption: String(err) }, { quoted: m })
+          }
+        }
+
+
+        if (budy.startsWith('$')) {
+          if (!isCreator) return reply(mess.botowner)
+          exec(budy.slice(2), (err, stdout) => {
+            if (err) return Subzero.sendMessage(from, { image: ErrorPic, caption: String(err) }, { quoted: m })
+            if (stdout) return replyH(stdout)
+          })
+        }
+
+
+        if (isCmd && budy.toLowerCase() != undefined) {
+          if (m.chat.endsWith('broadcast')) return
+          if (m.isBaileys) return
+          let msgs = global.db.database
+          if (!(budy.toLowerCase() in msgs)) return
+          Subzero.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
+        }
+    }
+  } catch (err) {
+    Subzero.sendMessage(`${ownertag}@s.whatsapp.net`, util.format(err), { quoted: m })
+    console.log(err)
+    let e = String(err)
+    if (e.includes("not-authorized")) return
+    if (e.includes("already-exists")) return
+    if (e.includes("rate-overlimit")) return
+    if (e.includes("Connection Closed")) return
+    if (e.includes("Timed Out")) return
+    if (e.includes("Value not found")) return
+    if (e.includes("Socket connection timeout")) return
+  }
+}
+
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+  fs.unwatchFile(file)
+  console.log(chalk.redBright(`Update ${__filename}`))
+  delete require.cache[file]
+  require(file)
+})
