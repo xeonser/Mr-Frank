@@ -6909,9 +6909,7 @@ Hi😊,  *Good* ${nowtime} ${pushname}
 ┃ ➮  5. Exit
 ┃ 
 ┃  
-╰─────────────── ⧉
-
-`;
+╰─────────────── ⧉`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
