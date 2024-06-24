@@ -742,7 +742,7 @@ Typed *surrender* to surrender and admited defeat`
 
 pay:`Hello *${pushname},* Choose one of the following options to pay.\n\n1. Ecocash
 2. Onemoney
-3. Bank\n𝙉.𝘽  To choose an option just reply with number.
+3. Bank\n\n𝙉.𝘽  To choose an option just reply with number.
 For example 1 for ecocash`,
 
 //ecocash//
@@ -750,13 +750,14 @@ For example 1 for ecocash`,
 𝙚.𝙜 263719647301`,
 263719647301:`${pushname}, Enter the amount in USD. 
 𝙀.𝙜 100`,
-100: `${pushname},  your 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation was successful.\n\nYour receipt code is :\n𝗜.𝗗 373762727𝗖50 Copy it\n
+100: `${pushname},  your 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation was successful.\n\nYour receipt code is :\n\n 𝗜.𝗗 373762727𝗖50  ( Copy it )\n
 Please terminate session by taping 𝙚𝙭𝙞𝙩`,
    exit: `Hey ${pushname}, all sessions have been terminated. 
 How can i help you?`,
 
 //onemoney//
   2:`To pay with Onemoney enter you account number
+  
 𝙚.𝙜 263719647302`,
 263719647302:`${pushname}, 
 Enter the amount in USD. 
@@ -768,10 +769,12 @@ Enter the amount in USD.
 
 //bank//
 3:`To pay with bank please enter your card number`,
-1234567891234567:`Welcome Darrell M, \nplease enter your password to with draw cash`,
+1234567891234567:`Welcome Darrell M, 
+
+Please enter your password to with draw cash`,
 2007:`${pushname},Enter the amount in USD. 
 𝙀.𝙜 130`,
-   130:`${pushname}, Transcation successful.\nPlease terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   130:`${pushname}, Transcation successful.\n\nPlease terminate session by taping 𝙚𝙭𝙞𝙩.`,
    //baNk//
    
    check:`Enter student name`,
@@ -781,7 +784,7 @@ Enter the amount in USD.
    portal:`Enter name of candidate`,
    darrell:`Enter candidate surname`,
    mucheri:`Enter student gender`,
-   male:`Maths A\n Physics A\n Chemistry \nComputer Science`,
+   male:`Maths A\n Physics A\n Chemistry A\nComputer Science A`,
    female:`Candidate with supplied details not found`,
    about:`𝗘𝗰𝗼𝗕𝗼𝘁 is a whatsapp bot developed by Darrell Mucheri & Crejinai Makanyisa to pay school fees online.It uses advanced algorithms to come to a conclusion.\n\n
 For more info visit here: mucheri-inc.vercel.app or
@@ -807,8 +810,8 @@ wa.me/263719647303`,
 
 	     'maths': `mathematics is it`,
 	     'geo': `geo it iss`,
-	     'acc': `accounts is it`,
-   OWNER: `wa.me/263719647303`,
+	     'hi': `Hello how may i assist you?`,
+   owner: `wa.me/263719647303`,
 	   
 	   //books
 	   
@@ -6867,21 +6870,17 @@ _Click the button below to download_`
 Hi😊,  *${pushname}*
 
 ╭───────────────߷
-┃╭─────────────⟢
-┃╏ ⟣ *Online Fees Payment Bot*
-┃╰─────────────⟢
-┃╭──────────────߷
-┃╏  
-┃╏ ➮Current Time is ${nowtime}
-┃╏ ➮ Todays date is ${kaidate}
-┃╏ ➮ Alive for ${runtime(process.uptime())}
-┃╏        
-┃╰─────────────߷
-┃
-┃ *Digitalize Your World With EcoBot*
-╰───────────────߷
+╭─────────────⟢
+╏ ⟣ 𝗘𝗰𝗼𝗕𝗼𝘁 𝗢𝗻𝗹𝗶𝗻𝗲
+╰─────────────⟢
+
+ ➮ Todays date is ${kaidate}
+ ➮ Alive for ${runtime(process.uptime())      
+
+ *Digitalize Your World With EcoBot*
+
 ╭──────────────⟞
-┆  *EcoBots  Menu* 
+┆  *Eco-Bots  Menu* 
 ╰──────────────⟞ 
 ╭─────────────── ⧉
 ┃ 
