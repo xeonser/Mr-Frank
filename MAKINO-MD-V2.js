@@ -6934,42 +6934,40 @@ _Click the button below to download_`
                     hasMediaAttachment: false
                   }),
                   nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-                      
+                    buttons: [     
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"pay","id":'pay'}`
+                        "buttonParamsJson": `{"display_text":"Pay","id":'dpay'}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"check ","id":'check'}`
+                        "buttonParamsJson": `{"display_text":"Check ","id":'dcheck'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"portal ","id":'portal'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":" refresh","id":'refresh'}`
+                        "buttonParamsJson": `{"display_text":"Portal ","id":'dportal'}`
                       },
                       
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"exit","id":'exit'}`
+                        "buttonParamsJson": `{"display_text":" Refresh","id":'drefresh'}`
                       },
                       
-
                       
-                      
-		         {
+                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
+                        "buttonParamsJson": `{"display_text":"Exit","id":'dexit'}`
+                      },
+                      
+                      
+                      
+		            {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"About","id":'dabut'}`
                       },
                     ]
                   })
