@@ -775,7 +775,7 @@ Please enter your password to with draw cash`,
 2007:`${pushname},Enter the amount in USD. 
 𝙀.𝙜 130`,
    130:`${pushname}, Transcation successful.\n\nPlease terminate session by taping 𝙚𝙭𝙞𝙩.`,
-   //baNk//
+   //baNk// 
    
    check:`Enter student name`,
  crejinai:`Enter student surname`,
@@ -6865,7 +6865,7 @@ _Click the button below to download_`
 
         try {
           await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
-         const helpMenuText = `
+         const helpMenuText =`
 Hi😊,  *${pushname}*
 
 ╭───────────────߷
@@ -6876,7 +6876,7 @@ Hi😊,  *${pushname}*
  ➮ Todays date is ${kaidate}
  ➮ Alive for ${runtime(process.uptime())      
 
- *Digitalize Your World With EcoBot*
+   World With EcoBot 🇿🇼
 
 ╭──────────────⟞
 ┆  *Eco-Bots  Menu* 
