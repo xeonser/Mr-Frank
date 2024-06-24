@@ -6929,50 +6929,6 @@ Hi😊,  *Good* ${nowtime} ${pushname}
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
 
 
-                    title: "                      Functions list",
-                    subtitle: "Browse through the available commands",
-                    hasMediaAttachment: false
-                  }),
-                  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Support","}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"pay",}`
-                      },
-                     
-                     {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"portal",}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"refresh",}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"exit",}`
-                      },
-                      
-                      
-
-		         {
-                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About",}`
-                      },
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
-
 
           if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
             const errorMessage = 'Error: Invalid message key.';
