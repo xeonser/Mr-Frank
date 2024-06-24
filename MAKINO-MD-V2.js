@@ -6819,13 +6819,13 @@ Hi😊,  *${pushname}*
 
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣ *Online Fees Payment Bot*
+┃╏ ⟣ *Online Fees Payment Bot*
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮Current Time is   ${nowtime}
+┃╏ ➮Current Time is ${nowtime}
 ┃╏ ➮ Todays date is ${kaidate}
-┃╏ ➮ Alive for  ${runtime(process.uptime())}
+┃╏ ➮ Alive for ${runtime(process.uptime())}
 ┃╏        
 ┃╰─────────────߷
 ┃
@@ -6882,19 +6882,19 @@ Hi😊,  *${pushname}*
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Check","id":'check'}`
                       },
                       
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Refresh","id":'refresh'}`
                       },
                      
 
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Exit","id":'exit'}`
                       },            
                     ]
                   })
