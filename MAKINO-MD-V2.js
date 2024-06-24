@@ -6880,9 +6880,9 @@ _Click the button below to download_`
 
         try {
           await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
-         const helpMenuText = `
+         const helpMenuText =`
 Hi😊,  *Good* ${nowtime} ${pushname}
-         
+	      
 ╭───────────────߷
 ┃╭─────────────⟢
 ┃╏⟣ *Online Fees Payment Bot*
@@ -6937,34 +6937,34 @@ Hi😊,  *Good* ${nowtime} ${pushname}
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Support","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Support","}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"pay","id":'english'}`
+                        "buttonParamsJson": `{"display_text":"pay",}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"portal","id":'geo'}`
+                        "buttonParamsJson": `{"display_text":"portal",}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"refresh","id":'acc'}`
+                        "buttonParamsJson": `{"display_text":"refresh",}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"exit","id":'shona'}`
+                        "buttonParamsJson": `{"display_text":"exit",}`
                       },
                       
                       
 
 		         {
                          "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'books'}`
+                        "buttonParamsJson": `{"display_text":"About",}`
                       },
                     ]
                   })
@@ -7067,7 +7067,7 @@ Hi😊,  *Good* ${nowtime} ${pushname}
       //                   }, {
       //                       quoted: m,
       //                   }
-      //              )
+      //              )8
       //              }
       //              break;
 
