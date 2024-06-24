@@ -747,13 +747,13 @@ pay:`Hello *${pushname},* Choose one of the following options to pay.
 3. Bank
  
 𝙉.𝘽  To choose an option just reply with number.
-For example 1 for ecocash.`,
+For example 1 for ecocash`,
 
 //ecocash//
   1:`Hello ${pushname},  you have chosen 𝙀𝙘𝙤𝙘𝙖𝙨𝙝
  
 To pay withh ecocash enter you account number
-𝙚.𝙜 263719647301.`,
+𝙚.𝙜 263719647301`,
 263719647301:`${pushname}, Enter the amount in USD. 
 𝙀.𝙜 100`,
 100: `${pushname},  your 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation was successful. 
@@ -762,13 +762,13 @@ Your receipt code is :
 
 𝗜.𝗗 373762727𝗖50 Copy it
 
-Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+Please terminate session by taping 𝙚𝙭𝙞𝙩`,
    exit: `Hey ${pushname}, all sessions have been terminated. 
 How can i help you?`,
 
 //onemoney//
   2:`To pay with Onemoney enter you account number
-𝙚.𝙜 263719647302.`,
+𝙚.𝙜 263719647302`,
 263719647302:`${pushname}, 
 Enter the amount in USD. 
 𝙀.𝙜 120`,
@@ -802,7 +802,7 @@ Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
    about:`𝗘𝗰𝗼𝗕𝗼𝘁 is a whatsapp bot developed by Darrell Mucheri & Crejinai Makanyisa to pay school fees online.It uses advanced algorithms to come to a conclusion.
 
 For more info visit here: mucheri-inc.vercel.app or
-wa.me/263719647303.`,
+wa.me/263719647303`,
    
 
 	   
