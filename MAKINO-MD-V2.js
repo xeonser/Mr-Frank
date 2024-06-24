@@ -6934,40 +6934,62 @@ _Click the button below to download_`
                     hasMediaAttachment: false
                   }),
                   nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [     
+                    buttons: [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"about","id":'${prefix}owner'}`
+                      },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Pay","id":'dpay'}`
+                        "buttonParamsJson": `{"display_text":"pay","id":'english'}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Check ","id":'dcheck'}`
+                        "buttonParamsJson": `{"display_text":" check","id":'geo'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Portal ","id":'dportal'}`
+                        "buttonParamsJson": `{"display_text":"portal","id":'acc'}`
                       },
-                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":" Refresh","id":'drefresh'}`
+                        "buttonParamsJson": `{"display_text":"refresh","id":'shona'}`
                       },
-                      
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Exit","id":'dexit'}`
+                        "buttonParamsJson": `{"display_text":"exit","id":'${prefix}bio'}`
                       },
                       
-                      
-                      
-		            {
+                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'dabut'}`
+                        "buttonParamsJson": `{"display_text":" 🗻","id":'${prefix}chem'}`
+                      },
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":" 🌋","id":'physics'}`
+                      },
+                      
+		              {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":" 📑","id":'history'}`
+                      },
+                      
+			
+               {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":" 🐾","id":'pracs'}`
+                      },
+                      
+
+		         {
+                         "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"MORE BOOKS 📚","id":'books'}`
                       },
                     ]
                   })
@@ -6975,7 +6997,6 @@ _Click the button below to download_`
               }
             }
           }, {});
-
 
           if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
             const errorMessage = 'Error: Invalid message key.';
