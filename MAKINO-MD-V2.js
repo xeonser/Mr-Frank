@@ -6847,22 +6847,7 @@ Hi😊,  ${pushname}*
 ┃ ➮ 
 ┃ ➮ 
 ┃ ➮ 
-┃ ➮ 
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮    
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
-┃ ➮  
-┃ ➮   
-┃ ➮  
+┃ ➮      
 ┃ ➮  
 ┃ ➮  
 ┃ ➮ 
@@ -6885,13 +6870,13 @@ Hi😊,  ${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "            © 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺 "
+                    text: "            © EcoBot Here To Serve You !"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
 
 
-                    title: "                      Textbooks list",
+                    title: "                      Functions list",
                     subtitle: "Browse through the available commands",
                     hasMediaAttachment: false
                   }),
@@ -6899,7 +6884,7 @@ Hi😊,  ${pushname}*
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"About","id":'${prefix}owner'}`
                       },
                       
                       {
