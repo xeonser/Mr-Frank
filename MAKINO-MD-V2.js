@@ -810,8 +810,7 @@ wa.me/263719647303`,
 
 	     'maths': `mathematics is it`,
 	     'geo': `geo it iss`,
-	     'hi': `Hello how may i assist you?`,
-   owner: `wa.me/263719647303`,
+	     
 	   
 	   //books
 	   
