@@ -777,7 +777,7 @@ Enter the amount in USD.
    check:`Enter student name`,
  crejinai:`Enter student surname`,
    makanyisa:`Enter student class`,
-  4G:`Crejinai has not paid yet!`,
+  41:`Crejinai has not paid yet!`,
    portal:`Enter name of candidate`,
    darrell:`Enter candidate surname`,
    mucheri:`Enter student gender`,
