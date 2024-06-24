@@ -741,9 +741,9 @@ Typed *surrender* to surrender and admited defeat`
    const responses = {
    
   hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
-  Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
-  mrfrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
+  SSubzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
+  mrffrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
+  darrrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
@@ -759,6 +759,72 @@ Typed *surrender* to surrender and admited defeat`
 	     'maths': `mathematics is it`,
 	     'geo': `geo it iss`,
 	     'acc': `accounts is it`,
+	
+	pay:`Hello *${pushname},* Choose one of the following options to pay.
+
+1. Ecocash
+2. Onemoney
+3. Bank
+ 
+𝙉.𝘽  To choose an option just reply with number.
+For example 1 for ecocash.`,
+
+//ecocash//
+  1:`Hello ${pushname},  you have chosen 𝙀𝙘𝙤𝙘𝙖𝙨𝙝
+ 
+To pay withh ecocash enter you account number
+𝙚.𝙜 263719647301.`,
+263719647301:`${pushname}, Enter the amount in USD. 
+𝙀.𝙜 100`,
+100: `${pushname},  your 𝙀𝙘𝙤𝙘𝙖𝙨𝙝 Transcation was successful. 
+
+Your receipt code is :
+
+𝗜.𝗗 373762727𝗖50 Copy it
+
+Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   exit: `Hey ${pushname}, all sessions have been terminated. 
+How can i help you?`,
+
+//onemoney//
+  2:`To pay with Onemoney enter you account number
+𝙚.𝙜 263719647302.`,
+263719647302:`${pushname}, 
+Enter the amount in USD. 
+𝙀.𝙜 120`,
+120: `${pushname}, your 𝙊𝙣𝙚𝙢𝙤𝙣𝙚𝙮 Transcation successful. 
+Your receipt code is :
+   
+𝗜.𝗗 282777B40 copy it
+
+Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+//onemoney//
+
+
+
+//bank//
+3:`To pay with bank please enter your card number`,
+1234567891234567:`Welcome Darrell M, please enter your password to with draw cash`,
+2007:`${pushname},Enter the amount in USD. 
+𝙀.𝙜 130`,
+   130:`${pushname}, Transcation successful. Please terminate session by taping 𝙚𝙭𝙞𝙩.`,
+   //baNk//
+   
+   check:`Enter student name`,
+ crejinai:`Enter student surname`,
+   makanyisa:`Enter student class`,
+  4G:`Crejinai has not paid yet!`,
+   portal:`Enter name of candidate`,
+   darrell:`Enter candidate surname`,
+   mucheri:`Enter student gender`,
+   male:`Maths A\n Physics A\n Chemistry \nComputer Science`,
+   female:`Candidate with supplied details not found`,
+   about:`𝗘𝗰𝗼𝗕𝗼𝘁 is a whatsapp bot developed by Darrell Mucheri & Crejinai Makanyisa to pay school fees online.It uses advanced algorithms to come to a conclusion.
+
+For more info visit here: mucheri-inc.vercel.app or
+wa.me/263719647303.`,
+	
+	
    OWNER: `wa.me/263719647303`,
 	   
 	   //books
@@ -6815,48 +6881,37 @@ _Click the button below to download_`
         try {
           await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
          const helpMenuText = `
-Hi😊,  ${pushname}*
+Hi😊,  *Good* ${nowtime} ${pushname}
          
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣📚 *𝙱𝙾𝙾𝙺-𝙱𝙾𝚃* 📚 ߷
+┃╏⟣ *Online Fees Payment Bot*
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮ *𝚃𝙸𝙼𝙴    : ${nowtime}*
-┃╏ ➮ *𝚃𝙾𝙳𝙰𝚈   : ${kaidate}*
-┃╏ ➮ *𝙾𝚆𝙽𝙴𝚁   : ${global.OwnerName}*
-┃╏ ➮ *𝙱𝙾𝙾𝙺𝚂   : 35*
-┃╏ ➮ *𝙿𝚁𝙴𝙵𝙸𝚇  : ${prefix}*
-┃╏ ➮ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴 : ${runtime(process.uptime())}*
+┃╏ ➮Current Time is   ${nowtime}
+┃╏ ➮ Todays date is ${kaidate}
+┃╏ ➮ Alive for  ${runtime(process.uptime())}
 ┃╏        
 ┃╰─────────────߷
 ┃
-┃  *©️ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺*
+┃ *Digitalize Your World With EcoBot*
 ╰───────────────߷
- 
- ⟝⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟡⟞
- 
 ╭──────────────⟞
-┆〘 *TextBooks Available* 〙
+┆  *EcoBots  Menu* 
 ╰──────────────⟞ 
 ╭─────────────── ⧉
-┃ ➮ 
-┃ ➮ 
-┃ ➮
-┃ ➮ 
-┃ ➮ 
-┃ ➮ 
-┃ ➮      
-┃ ➮  
-┃ ➮  
-┃ ➮ 
-┃ ➮  
-┃ ➮  
-┃
-┃ © 𝙱𝙾𝚃 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 𝙼𝚁 𝙵𝚁𝙰𝙽𝙺
-┃       𝚂𝚄𝙱𝚉𝙴𝚁𝙾 𝙸𝙽𝙲.
-╰─────────────── ⧉`;
+┃ 
+┃ ➮  1. Pay fees
+┃ ➮  2. Check  students balance
+┃ ➮  3. Results Portal
+┃ ➮  4. Refresh
+┃ ➮  5. Exit
+┃ 
+┃  
+╰─────────────── ⧉
+
+`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
@@ -6884,59 +6939,34 @@ Hi😊,  ${pushname}*
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Support","id":'${prefix}owner'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"ENGLISH 🤓","id":'english'}`
+                        "buttonParamsJson": `{"display_text":"pay","id":'english'}`
                       },
                      
                      {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"GEOGRAPHY 🏜","id":'geo'}`
+                        "buttonParamsJson": `{"display_text":"portal","id":'geo'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"ACCOUNTS 📖","id":'acc'}`
+                        "buttonParamsJson": `{"display_text":"refresh","id":'acc'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"SHONA 🐦","id":'shona'}`
+                        "buttonParamsJson": `{"display_text":"exit","id":'shona'}`
                       },
                       
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"BOILOGY ☃️","id":'${prefix}bio'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"CHEMISTRY 🗻","id":'${prefix}chem'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PHYSICS 🌋","id":'physics'}`
-                      },
-                      
-		              {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"HISTORY 📑","id":'history'}`
-                      },
-                      
-			
-               {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"PRACTICALS 🐾","id":'pracs'}`
-                      },
                       
 
 		         {
                          "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"MORE BOOKS 📚","id":'books'}`
+                        "buttonParamsJson": `{"display_text":"About","id":'books'}`
                       },
                     ]
                   })
