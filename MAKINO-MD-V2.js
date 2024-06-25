@@ -817,6 +817,41 @@ wa.me/263719647303`,
    OWNER: `wa.me/263719647303`,
 	   
 	   //books
+	nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+                    buttons: [
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"Pay","id":'pay'}`
+                      },
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"Check","id":'check'}`
+                      },
+                      
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"Refresh","id":'refresh'}`
+                      },
+                      
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"Exit","id":'exit'}`
+                      },
+                     
+
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
+                      },            
+                    ]
+                  })
+                })
+              }
+            }
+          }, {});
 	   
 	   
 };
@@ -6876,11 +6911,10 @@ Hi😊,  *${pushname}*
 ┃╭─────────────⟢
 ┃╏⟣ 𝗘𝗰𝗼𝗕𝗼𝘁 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗕𝗼𝘁
 ┃╰─────────────⟢
-┃╭──────────────߷
-┃╏  
-┃╏ ➮ Current Time is ${nowtime}
-┃╏ ➮ Todays date is ${kaidate}
-┃╏ ➮ Alive for ${runtime(process.uptime())}        
+┃  
+┃ ➮ Current Time is ${nowtime}
+┃ ➮ Todays date is ${kaidate}
+┃ ➮ Alive for ${runtime(process.uptime())}        
 ┃
 ╰───────────────߷
 ╭──────────────⟞
