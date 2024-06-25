@@ -739,11 +739,15 @@ Typed *surrender* to surrender and admited defeat`
       reply(responses[smallinput]);
     }*/
    const responses = {
-	   
+   
+  hello: `Hello ${pushname}, I am 𝗘𝗰𝗼𝗕𝗼𝘁. I can pay fees, check whether student has paid fees & check Results.
   
-  mrfrankk: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrelll: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
-  runtime: `Hey ${pushname}\n${nowtime}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
+
+ For more info type !𝗺𝗲𝗻𝘂.`,
+  Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
+  mrfrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
+  darrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
+  runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
   'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇`,
@@ -757,7 +761,8 @@ Typed *surrender* to surrender and admited defeat`
 
 	     'maths': `mathematics is it`,
 	     'geo': `geo it iss`,
-	     
+	     'acc': `accounts is it`,
+   OWNER: `wa.me/263719647303`,
 	   
 	   //books
 	   
@@ -6812,21 +6817,25 @@ _Click the button below to download_`
 
         try {
           await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
-         const helpMenuText =`
+         const helpMenuText = `
 Hi😊,  *${pushname}*
 
 ╭───────────────߷
-╭─────────────⟢
-╏ ⟣ 𝗘𝗰𝗼𝗕𝗼𝘁 𝗢𝗻𝗹𝗶𝗻𝗲
-╰─────────────⟢
-
- ➮ Todays date is ${kaidate}
- ➮ Alive for ${runtime(process.uptime())      
-
-   World With EcoBot 🇿🇼
-
+┃╭─────────────⟢
+┃╏⟣ *Online Fees Payment Bot*
+┃╰─────────────⟢
+┃╭──────────────߷
+┃╏  
+┃╏ ➮Current Time is   ${nowtime}
+┃╏ ➮ Todays date is ${kaidate}
+┃╏ ➮ Alive for  ${runtime(process.uptime())}
+┃╏        
+┃╰─────────────߷
+┃
+┃ *Digitalize Your World With EcoBot*
+╰───────────────߷
 ╭──────────────⟞
-┆  *Eco-Bots  Menu* 
+┆  *EcoBots  Menu* 
 ╰──────────────⟞ 
 ╭─────────────── ⧉
 ┃ 
@@ -6851,7 +6860,7 @@ Hi😊,  *${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "       © EcoBot Your Personal Assistant !"
+                    text: "            © EcoBot Your Personal Assistant !"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
@@ -6865,30 +6874,30 @@ Hi😊,  *${pushname}*
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Pay","id":'pay'}`
+                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Portal","id":'portal'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Check","id":'check'}`
+                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
                       },
                       
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Refresh","id":'refresh'}`
+                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                      },
+                      
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
                       },
                      
 
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Exit","id":'exit'}`
+                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
                       },            
                     ]
                   })
