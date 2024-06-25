@@ -739,13 +739,8 @@ Typed *surrender* to surrender and admited defeat`
       reply(responses[smallinput]);
     }*/
    const responses = {
-
-
-   
-
 	   
-  hello: `Hello ${pushname}, I am 𝗘𝗰𝗼𝗕𝗼𝘁. Type !𝗺𝗲𝗻𝘂 to see some functions, Otherwise How can I help you?`,
-  Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
+  
   mrfrankk: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
   darrelll: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
