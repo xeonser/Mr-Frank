@@ -6822,20 +6822,17 @@ Hi😊,  *${pushname}*
 
 ╭───────────────߷
 ┃╭─────────────⟢
-┃╏⟣ *Online Fees Payment Bot*
+┃╏⟣ 𝗘𝗰𝗼𝗕𝗼𝘁 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗕𝗼𝘁
 ┃╰─────────────⟢
 ┃╭──────────────߷
 ┃╏  
-┃╏ ➮Current Time is   ${nowtime}
+┃╏ ➮ Current Time is ${nowtime}
 ┃╏ ➮ Todays date is ${kaidate}
-┃╏ ➮ Alive for  ${runtime(process.uptime())}
-┃╏        
-┃╰─────────────߷
+┃╏ ➮ Alive for ${runtime(process.uptime())}        
 ┃
-┃ *Digitalize Your World With EcoBot*
 ╰───────────────߷
 ╭──────────────⟞
-┆  *EcoBots  Menu* 
+┆  *EcoBots  Menulist* 
 ╰──────────────⟞ 
 ╭─────────────── ⧉
 ┃ 
@@ -6860,7 +6857,7 @@ Hi😊,  *${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "            © EcoBot Your Personal Assistant !"
+                    text: "           © EcoBot Your Personal Assistant"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
@@ -6874,30 +6871,30 @@ Hi😊,  *${pushname}*
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Pay","id":'pay'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Check","id":'check'}`
                       },
                       
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"Refresh","id":'refresh'}`
+                      },
+                      
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"Exit","id":'exit'}`
                       },
                      
 
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"OWNER🛸","id":'${prefix}owner'}`
+                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
                       },            
                     ]
                   })
