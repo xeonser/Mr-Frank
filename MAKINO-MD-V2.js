@@ -816,42 +816,6 @@ wa.me/263719647303`,
 	     'acc': `accounts is it`,
    OWNER: `wa.me/263719647303`,
 	   
-	   //books
-	nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                    buttons: [
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Pay","id":'pay'}`
-                      },
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Check","id":'check'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Refresh","id":'refresh'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Exit","id":'exit'}`
-                      },
-                     
-
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
-                      },            
-                    ]
-                  })
-                })
-              }
-            }
-          }, {});
 	   
 	   
 };
