@@ -773,7 +773,7 @@ Enter the amount in USD.
    130:`${pushname}, Transcation successful.\nPlease terminate session by taping 𝙚𝙭𝙞𝙩.`,
    //baNk//
    
-   check:`Enter student name`,
+ check:`Enter student name`,
  crejinai:`Enter student surname`,
    makanyisa:`Enter student class`,
   41:`Crejinai has not paid yet!`,
@@ -797,8 +797,8 @@ wa.me/263719647303`,
 
  For more info type !𝗺𝗲𝗻𝘂.`,
   Subzero: `Subzero  is lost in Anime World, and I lost connection with him...`,
-  mrfrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
-  darrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
+  mrfrrank: `Darrell My creator is lost in Anime World, and I lost connection with him...`,
+  darrrell: `I am busy,will reply you when I f33l like (¬_¬)ﾉ...`,
   runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
   konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
   //ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
@@ -815,7 +815,13 @@ wa.me/263719647303`,
 	     'geo': `geo it iss`,
 	     'acc': `accounts is it`,
    OWNER: `wa.me/263719647303`,
-	   
+	credit: `Hi ${pushname}, welcome to the credit payment system.\n\n To continue choose one of the options:\n (i) Signup\n (ii) Login`,   
+	   signup: `*SIGNUP\n Please student name to continue`,
+	   mcdonald: `Please enter McDonald's surname`,
+	   muchatuta: `McDonald Muchatuta please enter your ID number`,
+6312345: `New successfully created. Please login to continue`,
+	   login: `Please enter your username`,
+
 	   
 	   
 };
@@ -6887,9 +6893,9 @@ Hi😊,  *${pushname}*
 ╭─────────────── ⧉
 ┃ 
 ┃ ➮  1. Pay fees
-┃ ➮  2. Check  students balance
-┃ ➮  3. Results Portal
-┃ ➮  4. Refresh
+┃ ➮  2. Check students balance
+┃ ➮  3. Credit payment system
+┃ ➮  4. About developers
 ┃ ➮  5. Exit
 ┃ 
 ┃  
@@ -6932,7 +6938,7 @@ Hi😊,  *${pushname}*
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Refresh","id":'refresh'}`
+                        "buttonParamsJson": `{"display_text":"Credit","id":'credit'}`
                       },
                       
                       
