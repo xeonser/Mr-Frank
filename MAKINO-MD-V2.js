@@ -881,9 +881,9 @@ const smallinput = budy.toLowerCase();
            headerType: 4, 
           contextInfo: {
             externalAdreply: {
-              title: "☃️Eco-Bot ",
+              title: "☃️Subzero-md-v2 ",
               body: " ",
-              thumbnailUrl: "https://i.posticc/0jDLndZm/transactional-chatbots.png",
+              thumbnailUrl: "https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png",
               mediaType: 1,
               //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
               //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
@@ -6913,10 +6913,10 @@ Hi😊,  *${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "          © EcoBot Your Personal Assistant"
+                    text: "           © EcoBot Your Personal Assistant"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
-                    ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/0jDLndZm/transactional-chatbots.png' } }, { upload: Subzero.waUploadToServer })),
+                    ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
 
 
                     title: "                      Functions list",
