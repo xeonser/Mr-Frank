@@ -6899,7 +6899,8 @@ Hi😊,  *${pushname}*
 ┃ ➮  5. Exit
 ┃ 
 ┃  
-╰─────────────── ⧉`;
+╰─────────────── ⧉
+> ST MARY’S HIGH `;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
@@ -6913,10 +6914,10 @@ Hi😊,  *${pushname}*
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "           © EcoBot Your Personal Assistant"
+                    text: " © EcoBot Your Personal Assistant"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
-                    ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/R0kQ0Xdb/IMG-20240322-WA0000.png' } }, { upload: Subzero.waUploadToServer })),
+                    ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/0jDLndZm/transactional-chatbots.png' } }, { upload: Subzero.waUploadToServer })),
 
 
                     title: "                      Functions list",
