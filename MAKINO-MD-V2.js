@@ -268,7 +268,7 @@ module.exports = Subzero = async (Subzero, m, chatUpdate, store) => {
       "externalAdReply": {
       "showAdAttribution": true,
       "containsAutoReply": true,
-      "title": `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+      "title": `📡ECOBOT📡`,
       "body": `${global.OwnerName}`,
       "previewType": "PHOTO",
       "thumbnailUrl": ``,
@@ -916,7 +916,7 @@ const smallinput = budy.toLowerCase();
           await Subzero.sendMessage(from, { react: { text: "❤", key: m.key } });
 
           let { data } = await axios.get('https://api.github.com/repos/MrFr3nk/MAKINO-MD-V2');
-          let teks = `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: github.com/anonphoenix007/MAKINO-MD-V2\n\nDon't forget to follow me on *GitHub* and give a ⭐️ to my projects.`;
+          let teks = `📡ECOBOT📡*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: github.com/anonphoenix007/MAKINO-MD-V2\n\nDon't forget to follow me on *GitHub* and give a ⭐️ to my projects.`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
@@ -934,7 +934,7 @@ const smallinput = budy.toLowerCase();
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     title: "©Subzero➮Mᴀᴋɪɴᴏ2024",
-                    subtitle: "☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ",
+                    subtitle: "📡ECOBOT📡",
                     hasMediaAttachment: false
                   }),
                   nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
@@ -1091,7 +1091,7 @@ case 'tovv': {
         getServerIp()
           .then(serverIp => {
             if (serverIp) {
-              const message = `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ server address is: ${serverIp}`;
+              const message = `📡ECOBOT📡 server address is: ${serverIp}`;
               Subzero.sendMessage(from, { text: message }, { quoted: m });
             } else {
               Subzero.sendMessage(from, { text: 'Failed to fetch server IP address.' }, { quoted: m });
@@ -1980,7 +1980,7 @@ break;
         for (let i = 0; i < imagesToSend; i++) {
           let message = {
             image: { url: wallpapers[i].image },
-            footer: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+            footer: `📡ECOBOT📡`,
             headerType: 4
           };
           Subzero.sendMessage(m.chat, message, { quoted: m });
@@ -2002,7 +2002,7 @@ break;
         let buttonMessage = {
           image: { url: hasil.image },
           caption: `Title : ${hasil.title}\nSource : ${hasil.source}\nMedia Url : ${hasil.image}`,
-          footer: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          footer: `📡ECOBOT📡`,
           buttons: buttons,
           headerType: 4
         }
@@ -2887,7 +2887,7 @@ break;
         Subzero.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
-        let teks = ` 「  ☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ pm user list  」\n\nTotal ${anu.length} users are using ☃️Subzero-md-v2 in personal chat.`
+        let teks = ` 「  📡ECOBOT📡 pm user list  」\n\nTotal ${anu.length} users are using ☃️Subzero-md-v2 in personal chat.`
         for (let i of anu) {
           teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
         }
@@ -3810,8 +3810,8 @@ break;
           let buttonMessage = {
             image: BotLogo,
             jpegThumbnail: Thumb,
-            caption: `*「 ☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ 」*\n\n_Group Setting Changer tool_:\n\nIf you want to Group close *-group close*\n\nIf you want to Group Oepn *-group open*`,
-            footer: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+            caption: `*「 📡ECOBOT📡 」*\n\n_Group Setting Changer tool_:\n\nIf you want to Group close *-group close*\n\nIf you want to Group Oepn *-group open*`,
+            footer: `📡ECOBOT📡`,
             headerType: 4
           }
           Subzero.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -4577,7 +4577,7 @@ break;
         if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} anything...`)
         let google = require('google-it')
         google({ 'query': args.join(" ") }).then(res => {
-          let teks = `「 *☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ* 」\n\n*Search term:* ${text}\n\n\n`
+          let teks = `「 *📡ECOBOT📡* 」\n\n*Search term:* ${text}\n\n\n`
           for (let g of res) {
             teks += `*Title* : ${g.title}\n\n`
             teks += `*Description* : ${g.snippet}\n\n`
@@ -4803,7 +4803,7 @@ break;
           Subzero.sendMessage(from, {
             video: { url: args[0] }, caption: "Succes!", contextInfo: {
               externalAdreply: {
-                title: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+                title: `📡ECOBOT📡`,
                 body: `${global.OwnerName}`,
                 thumbnail: BotLogo,
                 mediaType: 2,
@@ -6107,7 +6107,7 @@ _Click the button below to download_`
 ] */
         let button1ssMessages = {
           image: { url: waifudd.data.url },
-          caption: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          caption: `📡ECOBOT📡`,
           /*  footer: `${global.BotName}`,
             buttons: wbuttsss,
             headerType: 4 */
@@ -6132,7 +6132,7 @@ _Click the button below to download_`
    ] */
         let button12ssMessages = {
           image: { url: waifudd.data.url },
-          caption: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          caption: `📡ECOBOT📡`,
           /* footer: `${global.BotName}`,
           buttons: wbuttsss,
           headerType: 4 */
@@ -6154,7 +6154,7 @@ _Click the button below to download_`
           ]  */
         let xx1button3Messages = {
           image: { url: waifudd.data.url },
-          caption: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          caption: `📡ECOBOT📡`,
           /*  buttons: xxhnekobot,
           headerType: 1 */
         }
@@ -6175,7 +6175,7 @@ _Click the button below to download_`
 ] */
         let button112ssMessages = {
           image: { url: waifudd.data.url },
-          caption: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          caption: `📡ECOBOT📡`,
           /*   footer: `${global.BotName}`,
              buttons: wbuttsss,
              headerType: 4 */
@@ -6224,7 +6224,7 @@ _Click the button below to download_`
         ]
         let buttonssMessage = {
           image: { url: waifud.data.url },
-          caption: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          caption: `📡ECOBOT📡`,
           footer: `${global.BotName}`,
           buttons: wbutsss,
           headerType: 4
@@ -6589,8 +6589,8 @@ _Click the button below to download_`
         ]
         let wal = {
           image: { url: wallpaper[i].image },
-          caption: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
-          footer: `☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ`,
+          caption: `📡ECOBOT📡`,
+          footer: `📡ECOBOT📡`,
           buttons: walb,
           headerType: 4
         }
@@ -6729,7 +6729,7 @@ _Click the button below to download_`
           ] */
         let button4Messagess = {
           image: { url: waifuddd.data.url },
-          caption: '☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ',
+          caption: '📡ECOBOT📡',
           /*buttons: wbuttsssr,
           headerType: 4 */
         }
@@ -6751,7 +6751,7 @@ _Click the button below to download_`
           ] */
         let buttonMessagessf = {
           image: { url: waifuddd.data.url },
-          caption: '☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ',
+          caption: '📡ECOBOT📡',
           /*    buttons: wbuttsssr,
               headerType: 2  */
         }
@@ -6773,7 +6773,7 @@ _Click the button below to download_`
           ] */
         let buttonMessagessfgr = {
           image: { url: waifuddd.data.url },
-          caption: '☃️Subzero-md-v2 ᴍᴜʟᴛɪ-ᴅᴇᴠɪᴄᴇ',
+          caption: '📡ECOBOT📡',
           /*  buttons: wbuttsssr,
             headerType: 2 */
         }
@@ -6873,9 +6873,9 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
 
         try {
-          await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
+          await Subzero.sendMessage(from, { react: { text: "🤖", key: m.key } });
          const helpMenuText = `
-      Hi😊,  *${pushname}*
+Hi😊,  *${pushname}*
 
 ╭───────────────߷
 ┃╭─────────────⟢
@@ -6900,8 +6900,8 @@ _Click the button below to download_`
 ┃ 
 ┃  
 ╰─────────────── ⧉
-
-> ST MARY’S HIGH `;
+> ST MARY’S HIGH 
+_________________________`;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
             viewOnceMessage: {
