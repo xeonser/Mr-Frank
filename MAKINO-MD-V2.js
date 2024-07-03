@@ -272,7 +272,7 @@ module.exports = Subzero = async (Subzero, m, chatUpdate, store) => {
       "body": `${global.OwnerName}`,
       "previewType": "PHOTO",
       "thumbnailUrl": ``,
-      "thumbnail": fs.readFileSync(`./Assets/pic7.jpg`),
+      "thumbnail": fs.readFileSync(`./Assets/transactional-chatbots.png`),
       "sourceUrl": `https://whatsapp.com/channel/0029Va965tC84OmF6eA0F93m`}}},
       { quoted: m})
 	  }
@@ -3920,7 +3920,7 @@ break;
             sizny = res.content[0].attrs.size
             if (sizny < 20) {
               teks = `Sorry, munimun 20 members are required in a group to add bot!`
-              sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "916297175943@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
+              sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/transactional-chatbots.png'), `${global.packname}`, `${global.BotName}`, "916297175943@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
             } else if (sizny > 20) {
               await Subzero.groupAcceptInvite(vcc).then(async (res) => reply(jsonformat(res))).catch(_ => _)
               reply("Joined !")
@@ -6875,7 +6875,7 @@ _Click the button below to download_`
         try {
           await Subzero.sendMessage(from, { react: { text: "🧩", key: m.key } });
          const helpMenuText = `
-Hi😊,  *${pushname}*
+      Hi😊,  *${pushname}*
 
 ╭───────────────߷
 ┃╭─────────────⟢
@@ -6900,6 +6900,7 @@ Hi😊,  *${pushname}*
 ┃ 
 ┃  
 ╰─────────────── ⧉
+
 > ST MARY’S HIGH `;
 
           let msg = generateWAMessageFromContent(m.key.remoteJid, {
