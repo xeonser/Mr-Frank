@@ -269,7 +269,7 @@ module.exports = Subzero = async (Subzero, m, chatUpdate, store) => {
       "showAdAttribution": true,
       "containsAutoReply": true,
       "title": `📡ECOBOT📡`,
-      "body": `${global.OwnerName}`,
+      "body": `Pay Fees Easily.`,
       "previewType": "PHOTO",
       "thumbnailUrl": ``,
       "thumbnail": fs.readFileSync(`./Assets/transactional-chatbots.png`),
