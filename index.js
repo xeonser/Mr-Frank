@@ -455,7 +455,7 @@ return await Taira.forwardMessage(m.sender, quoted,{contextInfo:{ isForwarded: f
           const packageVersion = require("./package.json").version;
           const long = String.fromCharCode(8206);
           const readmore = long.repeat(4001); 
-          let message = `SUBZERO-MD-V2 Connected 📎${readmore}\n\nVersion: ${packageVersion}\n\n Default prefix is ${global.prefa}.\nChange your prefix with the setprefix command`
+          let message = `🔃❄️𝙎𝙐𝘽𝙕𝙀𝙍𝙊 𝙈𝘿 𝙑3❄️ Connected 📎${readmore}\n\nVersion: ${packageVersion}\n\n Default prefix is ${global.prefa}.\nChange your prefix with the setprefix command`
           await Taira.sendMessage(Taira.user.id, {text: message })
           };
     if (connection === "close") {
