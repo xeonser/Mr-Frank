@@ -6600,55 +6600,7 @@ _Click the button below to download_`
         break;
 
 
-      // case 'anime':
-      //   if (isBan) return reply(mess.banned);	 			
-      //   if (isBanChat) return reply(mess.bangc);
-      //   if (!m.isGroup) return reply(mess.grouponly);
-      //     if(!q) return reply(`Please proide a search term!\n\n*Example:* ${prefix}anime naruto`)
-      // reply(mess.waiting)							
-      // const { Anime } =require("@shineiichijo/marika")
-      //   const client = new Anime();
-      //    let anime = await client.searchAnime(q)
-      //   let result = anime.data[0];
-      //   console.log(result)
-      //  let details = `*Title:* ${result.title}\n`;
-      //   details += `*Format:* ${result.type}\n`;
-      //   details += `*Status:* ${result.status.toUpperCase().replace(/\_/g, " ")}\n`;
-      //   details += `*Total episodes:* ${result.episodes}\n`;
-      //   details += `*Duration:* ${result.duration}\n`;
-      //   details += `*Genres:*\n`;
-      //   for (let i = 0; i < result.genres.length; i++) {
-      //     details += `\t\t\t\t\t\t\t\t${result.genres[i].name}\n`;
-      //   }
-      //   details += `*Based on:* ${result.source.toUpperCase()}\n`;
-      //   details += `*Studios:*\n`;
-      //   for (let i = 0; i < result.studios.length; i++) {
-      //     details += `\t\t\t\t\t\t\t\t${result.studios[i].name}\n`;
-      //   }
-      //   details += `*Producers:*\n`;
-      //   for (let i = 0; i < result.producers.length; i++) {
-      //     details += `\t\t\t\t\t\t\t\t\t\t${result.producers[i].name}\n`;
-      //   }
-      //   details += `*Premiered on:* ${result.aired.from}\n`;
-      //   details += `*Ended on:* ${result.aired.to}\n`;
-      //   details += `*Popularity:* ${result.popularity}\n`;
-      //   details += `*Favorites:* ${result.favorites}\n`;
-      //   details += `*Rating:* ${result.rating}\n`;
-      //   details += `*Rank:* ${result.rank}\n\n`;
-      //   if (result.trailer.url !== null)
-      //     details += `*Trailer:* ${result.trailer.url}\n\n`;
-      //   details += `*URL:* ${result.url}\n\n`;
-      //   if (result.background !== null)
-      //     details += `*Background:* ${result.background}\n\n`;
-      //   details += `*Description:* ${result.synopsis.replace(
-      //     /\[Written by MAL Rewrite]/g,
-      //     ""
-      //   )}`
-      // Subzero.sendMessage(m.chat,{image:{url:result.images.jpg.large_image_url},caption:details},{quoted:m})   
-      // break;
-
-
-      //
+   
       case 'anime': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
@@ -6960,6 +6912,105 @@ _________________________`;
               }
             }
           }, {});
+          footer: proto.Message.InteractiveMessage.Footer.create({
+              text: "© Powered By Mr Frank"
+            }),
+            header: proto.Message.InteractiveMessage.Header.create({
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/ethix.jpg')}, { upload: Matrix.waUploadToServer})), 
+                  title: ``,
+                  gifPlayback: true,
+                  subtitle: "",
+                  hasMediaAttachment: false  
+                }),
+            nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+              buttons: [
+                {
+                  "name": "single_select",
+                  "buttonParamsJson": `{"title":"🔖Tᴀᴘ Fᴏʀ Mᴇɴᴜ",
+                 "sections":
+                   [{
+                    "title":"Fʀᴀɴᴋʟɪɴ Aʟʟ Mᴇɴᴜ",
+                    "highlight_label":"🤩 Aʟʟ Mᴇɴᴜ",
+                    "rows":[
+                      {
+                       "header":"",
+                       "title":"🔰 Aʟʟ Mᴇɴᴜ",
+                       "description":"🎨 Sᴜʙᴢᴇʀᴏ Aʟʟ Mᴇɴᴜ🎨",
+                       "id":"View All Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"⬇️ Dᴏᴡɴʟᴀᴏᴅᴇʀ Mᴇɴᴜ",
+                        "description":"📂Sʜᴏᴡ Aʟʟ Mᴇɴᴜ Fᴇᴀᴛᴜʀᴇs🗂",
+                        "id":"Downloader Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"👨‍👨‍👧‍👧Gʀᴏᴜᴘ Mᴇɴᴜ",
+                        "description":"🥵Gʀᴏᴜᴘ Fᴇᴀᴛᴜʀᴇs Lɪsᴛ🥵",
+                        "id":"Group Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"👨‍🔧 Tᴏᴏʟ Mᴇɴᴜ",
+                        "description":"🛠 Sʜᴏᴡ ᴍᴇ ᴛᴏᴏʟ ғᴇᴀᴛᴜʀᴇs ᴍᴇɴᴜ",
+                        "id":"Tool Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"🗿 Mᴀɪɴ Mᴇɴᴜ",
+                        "description":"📪 Bᴏᴛ Mᴀɪɴ Cᴏᴍᴍᴀɴᴅs🗳",
+                        "id":"Main Menu"
+                      },
+                     {
+                        "header":"",
+                        "title":"👨‍💻 Oᴡɴᴇʀ Mᴇɴᴜ",
+                        "description":"😎Fᴇᴀᴛᴜʀᴇ Fᴏʀ Mʏ ᴄᴏᴏʟ Dᴇᴠᴇʟᴏᴘᴇʀ Mʀ Fʀᴀɴᴋ & ᴏᴛʜᴇʀ Dᴇᴠᴇʟᴏᴘᴇʀs👨‍💼",
+                        "id":"Owner Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"✨ Aɪ Mᴇɴᴜ",
+                        "description":"💫 Sʜᴏᴡ ᴍᴇ Aɪ Mᴇɴᴜ 🎇",
+                        "id":"Ai Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"🔍Sᴇᴀʀᴄʜ Mᴇɴᴜ🔎",
+                        "description":"♂️ Sʜᴏᴡ ᴍᴇ Sᴇᴀʀᴄʜ ᴍᴇɴᴜ",
+                        "id":"Search Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"🧚‍♂️ Sᴛᴀʟᴋ Mᴇɴᴜ",
+                        "description":"👨‍💼 Sʜᴏᴡ ᴍᴇ sᴛᴀʟᴋ ᴍᴇɴᴜ🪆",
+                        "id":"Stalk Menu"
+                      },
+                      {
+                        "header":"",
+                        "title":"🥏 Cᴏɴᴠᴇʀᴛᴇʀ Mᴇɴᴜ",
+                        "description":"🛷 Sʜᴏᴡ ᴍᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ ᴍᴇɴᴜ",
+                        "id":"Converter Menu"
+                      }
+                    ]}
+                  ]}`
+                },
+              ],
+            }),
+            contextInfo: {
+                  mentionedJid: [m.sender], 
+                  forwardingScore: 999,
+                  isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                  newsletterJid: '120363249960769123@newsletter',
+                  newsletterName: "SᴜʙZᴇʀᴏ Mᴅ",
+                  serverMessageId: 143
+                }
+              }
+          }),
+        },
+      },
+    }, {});
 
 
           if (!msg || !msg.key || !msg.key.remoteJid || !msg.key.id) {
