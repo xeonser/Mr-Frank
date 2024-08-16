@@ -7017,7 +7017,7 @@ _________________________`;
                     text: helpMenuText
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: " © EcoBot Your Personal Assistant"
+                    text: " © 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 𝖲𝗎𝖻𝖹𝖾𝗋𝗈 𝖬𝖽"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     ...(await prepareWAMessageMedia({ image: { url: 'https://i.postimg.cc/0jDLndZm/transactional-chatbots.png' } }, { upload: Subzero.waUploadToServer })),
@@ -7031,30 +7031,30 @@ _________________________`;
                     buttons: [
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Pay","id":'pay'}`
+                        "buttonParamsJson": `{"display_text":"PING","id":'pay'}`
                       },
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Check","id":'check'}`
-                      },
-                      
-                      
-                      {
-                        "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Credit","id":'credit'}`
+                        "buttonParamsJson": `{"display_text":"RUNTIME","id":'check'}`
                       },
                       
                       
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"Exit","id":'exit'}`
+                        "buttonParamsJson": `{"display_text":"OWNER","id":'credit'}`
+                      },
+                      
+                      
+                      {
+                        "name": "quick_reply",
+                        "buttonParamsJson": `{"display_text":"ABOUT","id":'exit'}`
                       },
                      
 
                       {
                         "name": "quick_reply",
-                        "buttonParamsJson": `{"display_text":"About","id":'about'}`
+                        "buttonParamsJson": `{"display_text":"RESTART","id":'about'}`
                       },            
                     ]
                   })
